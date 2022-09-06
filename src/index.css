@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-big {
+    @apply text-3xl;
+  }
+
+  .text-h1 {
+    @apply text-2xl;
+  }
+
+  .text-h2 {
+    @apply text-xl;
+  }
+
+  .text-h3 {
+    @apply text-lg;
+  }
+
+  .text-normal {
+    @apply text-base;
+  }
+
+  .text-small {
+    @apply text-sm;
+  }
+
+  .text-smallest {
+    @apply text-xs;
+  }
+
+  @media screen and (min-width: 968px) {
+    .text-big {
+      @apply text-4xl;
+    }
+
+    .text-h1 {
+      @apply text-4xl;
+    }
+
+    .text-h2 {
+      @apply text-2xl;
+    }
+
+    .text-h3 {
+      @apply text-xl;
+    }
+
+    .text-normal {
+      @apply text-lg;
+    }
+
+    .text-small {
+      @apply text-base;
+    }
+
+    .text-smallest {
+      @apply text-sm;
+    }
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+
+  /* ======================== REUSE COMPONENTS ================== */
+  .layout {
+    @apply max-w-[1240px] w-[90%] ml-auto mr-auto 3xl:max-w-[1536px] font-poppins;
+  }
+
+  /* ======================== NAVBAR SECTION  ================== */
+  .nav__link{
+    @apply hover:text-pink-500 cursor-pointer
+  }
+
+  .dropdown__link{
+    @apply [&:hover>div:last-child]:opacity-100 relative
+  }
+
+  .dropdowns{
+    @apply rounded-md overflow-hidden mt-2 opacity-0 absolute transition-all duration-300 ease-out
+  }
+
+  .dropdown__item{
+    @apply bg-slate-800 px-6 py-4 hover:bg-slate-900 transition-all duration-300 flex 
+  }
 }
