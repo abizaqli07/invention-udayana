@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .text-biggest{
+    @apply text-5xl;
+  }
+
   .text-big {
     @apply text-3xl;
   }
@@ -32,6 +36,10 @@
   }
 
   @media screen and (min-width: 968px) {
+    .text-biggest{
+      @apply text-7xl;
+    }
+
     .text-big {
       @apply text-4xl;
     }
@@ -69,20 +77,34 @@
     @apply max-w-[1240px] w-[90%] ml-auto mr-auto 3xl:max-w-[1536px] font-poppins;
   }
 
+  .gradient-primary{
+    background: linear-gradient(90deg, rgba(0, 87, 255, 1) 0%, rgba(22, 207, 203, 1) 100%);
+  }
+
   /* ======================== NAVBAR SECTION  ================== */
   .nav__link{
-    @apply hover:text-pink-500 cursor-pointer
+    @apply hover:stroke-[6] cursor-pointer;
+  }
+
+  .nav__link:hover{
+    -webkit-text-stroke: 0.05rem #000;
   }
 
   .dropdown__link{
-    @apply [&:hover>div:last-child]:opacity-100 relative
+    @apply [&:hover>div:last-child]:opacity-100 [&:hover>div:last-child]:block relative
   }
 
   .dropdowns{
-    @apply rounded-md overflow-hidden mt-2 opacity-0 absolute transition-all duration-300 ease-out
+    @apply rounded-md overflow-hidden mt-1 opacity-0 hidden absolute shadow-sm
   }
 
   .dropdown__item{
-    @apply bg-slate-800 px-6 py-4 hover:bg-slate-900 transition-all duration-300 flex 
+    @apply bg-slate-200 px-6 py-4 hover:bg-slate-300 flex 
+  }
+
+  /* ======================== HEADER SECTION  ================== */
+  .hero {
+    background: url(./assets/hero.jpg) top right no-repeat;
+    background-size: cover;
   }
 }
