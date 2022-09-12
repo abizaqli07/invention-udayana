@@ -81,6 +81,22 @@
     background: linear-gradient(90deg, rgba(0, 87, 255, 1) 0%, rgba(22, 207, 203, 1) 100%);
   }
 
+  .gradient-primary-alt{
+    background: linear-gradient(0deg, rgba(0, 87, 255, 1) 0%, rgba(22, 207, 203, 1) 100%);
+  }
+
+  .title__container{
+    @apply flex flex-col text-center justify-center items-center mt-24;
+  }
+
+  .sub__title{
+    @apply text-blue-600 font-semibold text-h3;
+  }
+
+  .title{
+    @apply font-bold text-h1;
+  }
+
   /* ======================== NAVBAR SECTION  ================== */
   .nav__link{
     @apply hover:stroke-[6] cursor-pointer;
@@ -102,9 +118,67 @@
     @apply bg-slate-200 px-6 py-4 hover:bg-slate-300 flex 
   }
 
-  /* ======================== HEADER SECTION  ================== */
+  /* ======================== HOME SECTION  ================== */
   .hero {
     background: url(./assets/hero.jpg) top right no-repeat;
     background-size: cover;
+  }
+
+  .service__card{
+    @apply max-w-md flex gap-4 py-6 px-4 rounded-3xl hover:translate-x-1 hover:-translate-y-2 hover:drop-shadow-[0px_20px_20px_rgba(0,0,0,0.16)] shadow-slate-500 flex-col text-center hover:gradient-primary mx-auto sm:flex-row transition-all duration-300 ease-out;
+    @apply sm:text-left [&>div:last-child>div:last-child]:sm:text-justify lg:max-w-xl hover:text-white items-center lg:items-start cursor-pointer
+  }
+
+  .news__image{
+    background: url(./assets/news.png) top center no-repeat;
+    background-size: cover;
+  }
+
+  .news__card:hover{
+    @apply drop-shadow-[0px_15px_20px_rgba(0,0,0,0.20)] translate-x-1 -translate-y-4 transition-all duration-300 ease-in-out
+  }
+
+  .news__card:hover .news__image{
+    @apply absolute top-0 right-0 h-[350px] scale-110 transition-all duration-300 ease-in-out
+  }
+
+  .news__card:hover .news__content{
+    @apply text-white transition-all duration-200 ease-out;
+  }
+
+  .news__card:hover .news__button{
+    @apply from-white/40 to-white/40
+  }
+
+  .news__button{
+    @apply px-4 py-1 rounded-xl text-normal cursor-pointer text-white transition-all duration-200 delay-500 bg-gradient-to-r from-[rgb(0,87,255)] to-[rgb(22,207,203)]
+  }
+
+  .news__card-swiper:hover{
+    @apply drop-shadow-[0px_15px_20px_rgba(0,0,0,0.20)];
+  }
+
+  .news__card-swiper:hover .news__image{
+    @apply absolute top-0 right-0 h-[350px] scale-110 transition-all duration-300 ease-in-out
+  }
+
+  .news__card-swiper:hover .news__content{
+    @apply text-white transition-all duration-200 ease-out;
+  }
+
+  .news__card-swiper:hover .news__button{
+    @apply from-white/40 to-white/40
+  }
+
+  .footer__content{
+    @apply text-center flex flex-col lg:text-left
+  }
+
+  .footer__title{
+    @apply text-normal font-bold mb-2 md:mb-4
+  }
+
+  .footer__link{
+    @apply text-small font-light cursor-pointer hover:font-semibold
   }
 }

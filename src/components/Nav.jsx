@@ -20,7 +20,7 @@ function Nav() {
 
   return (
     <div className='overflow-x-hidden'>
-      <div className={`fixed z-40 w-[100vw]  font-normal bg-transparent ${scrollY > 0 ? "shadow-md bg-white" : ""}`}>
+      <div className={`fixed z-40 w-[100vw]  font-normal ${scrollY > 0 ? "shadow-md bg-white" : ""}`}>
         <div className={`flex justify-between gap-8 layout pb-6 text-normal items-center transition-all duration-300 ${scrollY > 0 ? "pt-6" : "pt-6 lg:pt-16"}`}>
           <div><Link to="/" className='flex gap-2 justify-center items-center font-bold'><img src={logo} />Logo</Link></div>
 
@@ -63,13 +63,13 @@ function Nav() {
             </li>
           </ul>
 
-          <div className='flex lg:hidden text-big items-center cursor-pointer bg-white/60 p-1 rounded-lg' onClick={toggleHandler}>
+          <div className='flex lg:hidden text-big items-center cursor-pointer bg-white/60 p-1 rounded-lg hover:bg-white' onClick={toggleHandler}>
             <BiMenuAltRight />
           </div>
         </div>
       </div>
 
-      <div className={`lg:hidden w-[100vw] h-[100vh] bg-white flex justify-center transition-all fixed z-50 duration-500 ease-out ${toggle ? "right-0" : "-right-full"}`}>
+      <div className={`lg:hidden w-[100vw] h-[100vh] bg-white flex justify-center transition-all fixed z-50 duration-500 ease-out ${toggle ? "right-0" : "-right-[110%]"}`}>
         <div className='absolute text-big top-8 right-8 cursor-pointer' onClick={toggleHandler}><BiLogInCircle/></div>
         <ul className='gap-8 items-center flex flex-col justify-center'>
           <li className=' nav__link'>
@@ -92,7 +92,7 @@ function Nav() {
           </li>
 
           <li className=''>
-            <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 bg-white/40 hover:bg-white'>
+            <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary '>
               <Link to="/takeaction">Take Action</Link>
             </div>
           </li>

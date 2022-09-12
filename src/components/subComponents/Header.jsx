@@ -3,7 +3,7 @@ import hero2 from "../../assets/hero2.png";
 
 function Header() {
   return (
-    <div className='w-[100vw] h-[100vh] bg-slate-400 relative'>
+    <div className='w-full h-[100vh] bg-slate-400 relative'>
       <div className='flex hero w-full h-full lg:hidden'>
         <div className='flex flex-col justify-center items-center layout text-center lg:items-start lg:text-left'>
           <div className='text-h1 font-semibold'>Connect With</div>
