@@ -12,7 +12,7 @@ import {
 
 function Footer() {
   return (
-    <div className='w-full h-full mb-4'>
+    <div className='w-full h-full pb-4'>
       <div className='layout'>
         <div className='flex flex-col gap-8 lg:flex-row justify-between items-center lg:items-start'>
           <div className='flex flex-col gap-4 justify-center text-center items-center mb-6 lg:text-left lg:justify-start lg:items-start'>

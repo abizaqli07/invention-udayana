@@ -181,4 +181,19 @@
   .footer__link{
     @apply text-small font-light cursor-pointer hover:font-semibold
   }
+
+  /* ======================== POPULATION SECTION  ================== */
+  .population__hero {
+    background: url(./assets/populationHero.png) bottom right no-repeat;
+    background-size: cover;
+  }
+
+  .population__background{
+    background: url(./assets/population.png) bottom right no-repeat;
+    background-size: cover;
+  }
+
+  .population__content-title{
+    @apply text-big font-bold self-center
+  }
 }
