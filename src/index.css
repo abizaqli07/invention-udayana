@@ -236,7 +236,11 @@
   }
 
   .footer__link{
-    @apply text-small font-light cursor-pointer hover:font-semibold
+    @apply text-small font-light cursor-pointer
+  }
+
+  .footer__link:hover{
+    -webkit-text-stroke: 0.05rem #000;
   }
 
   /* ======================== POPULATION SECTION  ================== */
@@ -303,4 +307,11 @@
     background: url(./assets/aboutHero.png) bottom right no-repeat;
     background-size: cover;
   }
+
+  /* ======================== CLIMATE CHANGE SECTION  ================== */
+  .climate__quote-background{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(./assets/climateQuote.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
 }

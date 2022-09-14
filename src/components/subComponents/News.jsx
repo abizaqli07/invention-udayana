@@ -3,7 +3,7 @@ import NewsSwiper from './NewsSwiper'
 
 function News() {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full mb-40'>
       <div className='layout '>
         <div className='title__container'>
           <div className='sub__title' data-aos='fade-up' data-aos-duration='500'>Berita Terbaru</div>
@@ -11,7 +11,7 @@ function News() {
         </div>
 
         <div className='hidden sm:grid grid-cols-[repeat(1,_300px)] mt-16 gap-8 justify-center items-center sm:grid-cols-[repeat(2,_300px)] lg:grid-cols-[repeat(3,_300px)] '>
-        <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
+          <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div className='news__image news__image1 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
             <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100'>
               <div className='text-h3 font-semibold mb-2'>Kota Terendam!</div>

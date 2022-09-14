@@ -31,17 +31,8 @@ function Nav() {
             <li className=' nav__link'>
               <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>About</NavLink>
             </li>
-
-            <li className='dropdown__link'>
-              <div className='flex gap-2 text-normal content-center nav__link peer'>
-                Ocean Life
-                <BiChevronDown className='text-h2' />
-              </div>
-
-              <div className='dropdowns'>
-                <div className='dropdown__item'><NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Habitats</NavLink></div>
-                <div className='dropdown__item'><NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Population</NavLink></div>
-              </div>
+            <li className=' nav__link'>
+            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Ocean Life</NavLink>
             </li>
 
             <li className='dropdown__link'>
@@ -73,27 +64,27 @@ function Nav() {
         <div className='absolute text-big top-8 right-8 cursor-pointer' onClick={toggleHandler}><BiLogInCircle/></div>
         <ul className='gap-8 items-center flex flex-col justify-center'>
           <li className=' nav__link'>
-            <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Home</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Home</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>About</NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>About</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Habitats</NavLink>
+            <NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Habitats</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Population</NavLink>
+            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Population</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Pollution and Plastic</NavLink>
+            <NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Pollution and Plastic</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Climate Change</NavLink>
+            <NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Climate Change</NavLink>
           </li>
 
           <li className=''>
             <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary '>
-              <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
+              <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")} onClick={toggleHandler}>Take Action</NavLink>
             </div>
           </li>
         </ul>

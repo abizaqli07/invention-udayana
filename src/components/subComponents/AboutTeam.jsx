@@ -16,7 +16,7 @@ function AboutTeam() {
           <div className='text-blue-500 text-h1 font-bold'>Tim Kami</div>
         </div>
 
-        <div className='flex flex-wrap justify-center items-center gap-8'>
+        <div className='flex flex-wrap justify-center items-center gap-20'>
 
           <div className='flex flex-col gap-0 justify-center items-center text-center rounded-md overflow-hidden hover:shadow-[3px_3px_16px_rgba(0,0,0,0.16)] hover:translate-x-2 hover:-translate-y-2 transition-all duration-300 ease-out'>
             <div className='max-w-[300px] aspect-[3/4] overflow-hidden'><img className='object-fit' src={ProfileAbi}/></div>
