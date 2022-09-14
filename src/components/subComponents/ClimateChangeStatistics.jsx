@@ -1,6 +1,6 @@
 import React from 'react'
 import CC1 from '../../assets/cc1.png'
-// import CC2 from '../../assets/cc2.png'
+import CC2 from '../../assets/cc2.png'
 import CC3 from '../../assets/cc3.png'
 
 function ClimateChangeStatistics() {
@@ -18,17 +18,17 @@ function ClimateChangeStatistics() {
         {/* ========== CONTAINER FOR CARD ========== */}
         <div className='grid grid-cols-[repeat(1,_300px)] mt-16 gap-8 justify-center items-center sm:grid-cols-[repeat(2,_300px)] lg:grid-cols-[repeat(3,_300px)] '>
 
-          <div className='w-full p-6 flex flex-col justify-center items-center text-center min-h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
+          <div className='statistic__content w-full p-6 flex flex-col justify-center items-center text-center h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div><img src={ CC1 } /></div>
             <div>Bumi menyerap panas yang dihasilkan oleh peningkatan emisi.</div>
           </div>
-          <div className='w-full p-6 bg-slate-300 flex flex-col justify-center items-center text-center min-h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='750'>
-            <div><img /></div>
-            <div>Bumi menyerap panas yang dihasilkan oleh peningkatan emisi.</div>
+          <div className='statistic__content w-full p-6  flex flex-col justify-center items-center text-center h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='750'>
+            <div><img src={CC2}/></div>
+            <div>Penurunan mata pencaharian masyarakat pesisir pantai</div>
           </div>
-          <div className='w-full p-6 bg-slate-300 flex flex-col justify-center items-center text-center min-h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='900'>
-            <div><img /></div>
-            <div>Bumi menyerap panas yang dihasilkan oleh peningkatan emisi.</div>
+          <div className='statistic__content w-full p-6  flex flex-col justify-center items-center text-center h-[300px]' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='900'>
+            <div><img src={CC3}/></div>
+            <div>Penurunan di sektor perikanan dan akuakultur di seluruh dunia.</div>
           </div>
 
 
