@@ -14,7 +14,7 @@ function Footer() {
   return (
     // ========== CONTAINER FOR FOOTER ==========
     <div className='w-full h-full pb-4'>
-      <div className='layout'>
+      <div className='layout' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
         <div className='flex flex-col gap-8 lg:flex-row justify-between items-center lg:items-start'>
           <div className='flex flex-col gap-4 justify-center text-center items-center mb-6 lg:text-left lg:justify-start lg:items-start'>
             <div className='flex gap-2 items-center text-big font-bold'><img src={Logo} />Logo</div>

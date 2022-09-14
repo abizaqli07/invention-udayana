@@ -5,7 +5,7 @@ function HomeBox() {
   return (
 
     // ========== CONTAINER FOR HOMEBOX ==========
-    <div className='w-full h-full mt-36 mb-52'>
+    <div className='w-full h-full mt-36 mb-52' data-aos='zoom-in-up' data-aos-duration='500' data-aos-delay='500'>
       <div className='layout gradient-primary py-36 sm:py-20 px-8 mb-8 rounded-[1rem] text-white flex flex-col gap-6 text-center justify-center items-center drop-shadow-[0px_30px_30px_rgba(0,0,0,0.35)] shadow-[#161616] md:flex-row lg:gap-14 '>
         <div className='flex flex-col md:text-left'>
           <div className='text-h3 font-normal'>Mari beraksi</div>
