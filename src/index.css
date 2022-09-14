@@ -262,9 +262,10 @@
 
   /* ======================== TAKE ACTION SECTION  ================== */
   .takeaction__hero {
-    background: url(./assets/takeActionHero.png) bottom right no-repeat;
+    background: url(./assets/takeActionHero.jpg) bottom right no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
 
   .take__action-card{
     @apply flex flex-col gap-0 max-w-[300px] [&:hover>div:last-child]:gradient-primary [&:hover>div:last-child]:text-white [&:hover>div:last-child>div:last-child]:border-slate-700 
@@ -274,6 +275,7 @@
     background: url(./assets/donation.png) top center no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
 
   .donation__link{
     @apply  cursor-pointer pl-6
@@ -309,6 +311,7 @@
     background: url(./assets/aboutHero.png) bottom right no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
 
   .service__card:hover img {
     filter: invert(1)
@@ -320,10 +323,13 @@
     background: url(./assets/climate_changes.jpg) top right no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
+
   .climate__quote-background {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(./assets/climateQuote.jpg) center center no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
 
   .statistic__content{
     @apply gap-4 hover:shadow-xl rounded-2xl
@@ -333,5 +339,6 @@
     background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(./assets/pollutionHeader.jpg) center center no-repeat;
     background-size: cover;
   }
+  /* https://unsplash.com/s/photos/ocean */
 
 }

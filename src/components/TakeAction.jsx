@@ -9,8 +9,8 @@ import { useEffect } from 'react'
 
 const TakeAction = () => {
 
-   // EFFECT FOR ANIMATE ON SCROLL
-   useEffect(() => {
+  // EFFECT FOR ANIMATE ON SCROLL
+  useEffect(() => {
     Aos.init({
       once: true,
     });
@@ -18,10 +18,10 @@ const TakeAction = () => {
 
   return (
     <div>
-      <TakeActionHeader/>
-      <TakeActionService/>
-      <TakeActionDonation/>
-      <Footer/>
+      <TakeActionHeader />
+      <TakeActionService />
+      <TakeActionDonation />
+      <Footer />
     </div>
   )
 }
