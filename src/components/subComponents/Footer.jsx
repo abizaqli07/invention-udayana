@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../assets/logo.png'
+import { NavLink } from "react-router-dom";
 
 import {
   AiFillInstagram,
@@ -23,9 +24,9 @@ function Footer() {
           <div className='flex flex-col gap-y-8 gap-x-12 xsm:flex-row xsm:flex-wrap justify-center items-center xsm:items-start lg:flex-nowrap'>
             <div className='footer__content'>
               <div className='footer__title'>Tautan</div>
-              <div className='footer__link'>Tentang Kami</div>
-              <div className='footer__link'>Ocean Life</div>
-              <div className='footer__link'>Ocean Problem</div>
+              <div className='footer__link'><NavLink to="/about">Tentang Kami</NavLink></div>
+              <div className='footer__link'><NavLink to="/population">Ocean Life</NavLink></div>
+              <div className='footer__link'><NavLink to="/climatechange">Ocean Problem</NavLink></div>
             </div>
             <div className='footer__content'>
               <div className='footer__title'>Bantu</div>

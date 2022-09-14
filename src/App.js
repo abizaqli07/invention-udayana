@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import About from './components/About';
-import Habitat from './components/Habitat';
 import Population from './components/Population';
 import PollutionPlastic from './components/PollutionPlastic';
 import ClimateChange from './components/ClimateChange';

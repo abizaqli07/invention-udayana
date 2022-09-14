@@ -1,4 +1,5 @@
 import hero2 from "../../assets/hero2.png";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,12 +9,12 @@ function Header() {
       {/* ========== CONTAINER FOR SMALL DEVICE ========== */}
       <div className='flex hero w-full h-full lg:hidden'>
         <div className='flex flex-col justify-center items-center layout text-center lg:items-start lg:text-left'>
-          <div className='text-h1 font-semibold'>Connect With</div>
+          <div className='text-h1 font-bold'>Connect With</div>
           <div className='text-biggest font-bold'>The Ocean</div>
           <div className='text-normal pt-4'>Berdiri bersama untuk menjaga kesehatan lautan dari ancaman yang akan datang.</div>
           <div className='mt-8 flex flex-col gap-4'>
             <div className='py-3 px-6 rounded-full gradient-primary shadow-md shadow-slate-800 font-semibold text-white cursor-pointer'>Jelajah Sekarang</div>
-            <div className='py-3 px-6 rounded-full border-[2px] border-blue-500 shadow-md shadow-slate-800 font-semibold text-blue-500 cursor-pointer bg-white/40'>Bantu Donasi</div>
+            <div className='py-3 px-6 rounded-full border-[2px] border-blue-500 shadow-md shadow-slate-800 font-semibold text-blue-500 cursor-pointer bg-white/40'><NavLink to="/takeaction">Bantu Donasi</NavLink></div>
           </div>
         </div>
       </div>

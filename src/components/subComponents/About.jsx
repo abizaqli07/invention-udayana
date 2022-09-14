@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutImage from '../../assets/about.png'
+import { NavLink } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -12,13 +13,13 @@ function About() {
         
         {/* =========== CONTAINER FOR SMALL DEVICE =========== */}
         <div className='flex flex-col lg:hidden'>
-          <div className='text-h3 font-normal'>Tentang Website</div>
-          <div className='text-h1 font-bold'>Apa itu Website</div>
+          <div className='text-h3 font-normal'>Tentang Sagara</div>
+          <div className='text-h1 font-bold'>Apa itu Sagara</div>
         </div>
         {/* =========== END OF SMALL DEVICE =========== */}
 
         {/* =========== ABOUT IMAGE =========== */}
-        <div data-aos='zoom-in-up' data-aos-duration='1000' data-aos-delay='1000'><img className='w-full h-auto p-12' src={AboutImage} /></div>
+        <div data-aos='zoom-in-up' data-aos-duration='1000' data-aos-delay='1000'><img className='w-full h-auto p-2 md:p-12' src={AboutImage} /></div>
         {/* =========== END OF ABOUT IMAGE =========== */}
 
         {/* =========== CONTAINER FOR LARGE DEVICE =========== */}
@@ -31,7 +32,7 @@ function About() {
           <div className='font-extralight'>
             Dengan seluruh elemen masyarakat, kami pergi ke Perserikatan Bangsa-Bangsa dan badan-badan global lainnya untuk melakukan perubahan Internasional. Kami menghadiri pertemuan-pertemuan ini sehingga kami dapat menawarkan rencana yang kreatif, layak secara ekonomi, berkelanjutan, dan ramah lingkungan kepada para pembuat keputusan.
           </div>
-          <div className='w-full lg:w-fit px-12 py-4 rounded-full bg-white text-blue-500 text-center text-h3 font-semibold mt-4 mb-16 lg:mb-0'>Tentang Kami</div>
+          <div className='w-full lg:w-fit px-12 py-4 rounded-full bg-white text-blue-500 text-center text-h3 font-semibold mt-4 mb-16 lg:mb-0 cursor-pointer'><NavLink to="/about">Tentang Kami</NavLink></div>
         </div>
         {/* =========== END OF CONTAINER LARGE DEVICE =========== */}
       </div>
