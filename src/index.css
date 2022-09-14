@@ -99,7 +99,7 @@
 
   /* ======================== NAVBAR SECTION  ================== */
   .nav__link{
-    @apply hover:stroke-[6] cursor-pointer;
+    @apply hover:stroke-[6] cursor-pointer text-h3;
   }
 
   .nav__link:hover{

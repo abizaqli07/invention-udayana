@@ -15,14 +15,14 @@ function ConfirmDonation(props) {
       <div className='bg-white p-12 gap-12 flex flex-col rounded-t-[2rem] lg:rounded-l-[2rem] lg:rounded-tr-none'>
 
         <div className='flex text-small font-light text-slate-600 items-start border-b-[1px] border-blue-500 w-fit'>
-          <div className='donation__link-active ' onClick={props.showPersonal}>Data Pribadi</div>
+          <div className='donation__link-active ' onClick={props.showPersonal}>Data</div>
 
           <div className='donation__link-active pl-6' onClick={props.showDonation}>Donasi</div>
 
-          <div className='donation__link-active pl-6' >Konfimasi Data & Donasi</div>
+          <div className='donation__link-active pl-6' >Konfimasi</div>
         </div>
 
-        <div className='min-w-[350px] flex flex-col p-12 bg-slate-100 rounded-xl max-w-sm self-center justify-self-center lg:self-start lg:justify-self-start' data-aos='fade-left' data-aos-duration='500' data-aos-delay='100'>
+        <div className='xsm:min-w-[350px] flex flex-col p-12 bg-slate-100 rounded-xl max-w-sm self-center justify-self-center lg:self-start lg:justify-self-start' data-aos='fade-left' data-aos-duration='500' data-aos-delay='100'>
           <div className='text-h3 font-bold mb-12'>Ringkasan Donasi</div>
           <div className='flex flex-col gap-1 text-small font-light pb-4 border-b-[1px] border-slate-800'>
 

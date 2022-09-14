@@ -20,11 +20,11 @@ function Donation(props) {
     <div className='w-full max-w-[1200px] grid grid-cols-1 gap-0 lg:grid-cols-[1.3fr_.7fr] drop-shadow-[0px_10px_10px_rgba(0,0,0,0.40)] lg:min-h-[670px]'>
       <div className='bg-white p-12 gap-12 flex flex-col rounded-t-[2rem] lg:rounded-l-[2rem] lg:rounded-tr-none'>
         <div className='flex text-small font-light text-slate-600 items-start border-b-[1px] border-blue-500 w-fit'>
-          <div className='donation__link-active' onClick={props.showPersonal}>Data Pribadi</div>
+          <div className='donation__link-active' onClick={props.showPersonal}>Data</div>
 
           <div className='donation__link-active pl-6'>Donasi</div>
 
-          <div className='donation__link' onClick={props.showConfirm}>Konfimasi Data & Donasi</div>
+          <div className='donation__link' onClick={props.showConfirm}>Konfimasi</div>
         </div>
 
         <form className='flex flex-col gap-4' data-aos='fade-left' data-aos-duration='500' data-aos-delay='100'>

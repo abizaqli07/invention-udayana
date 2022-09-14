@@ -18,8 +18,8 @@ function Footer() {
       <div className='layout' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
         <div className='flex flex-col gap-8 lg:flex-row justify-between items-center lg:items-start'>
           <div className='flex flex-col gap-4 justify-center text-center items-center mb-6 lg:text-left lg:justify-start lg:items-start'>
-            <div className='flex gap-2 items-center text-big font-bold'><img src={Logo} />Logo</div>
-            <div className='text-normal'>Lorem ipsum itterator dolor sit amet, <br/> consectetur adipiscing elit.</div>
+            <div className='flex gap-2 items-center text-big font-bold'><img src={Logo} />Segara</div>
+            <div className='text-normal'>Berdiri bersama untuk menjaga kesehatan lautan <br/> dari ancaman yang akan datang.</div>
           </div>
           <div className='flex flex-col gap-y-8 gap-x-12 xsm:flex-row xsm:flex-wrap justify-center items-center xsm:items-start lg:flex-nowrap'>
             <div className='footer__content'>
