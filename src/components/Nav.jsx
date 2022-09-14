@@ -20,7 +20,7 @@ function Nav() {
 
   return (
     <div className='overflow-x-hidden'>
-      <div className={`fixed z-40 w-[100vw]  font-normal ${scrollY > 0 ? "shadow-md bg-white" : ""}`}>
+      <div className={`fixed z-40 w-[100vw]  font-normal ${scrollY > 0 ? "shadow-md bg-white" : ""}`} data-aos='fade-down' data-aos-duration='1000' data-aos-delay='500'>
         <div className={`flex justify-between gap-8 layout pb-6 text-normal items-center transition-all duration-300 ${scrollY > 0 ? "pt-6" : "pt-6 lg:pt-16"}`}>
           <div><Link to="/" className='flex gap-2 justify-center items-center font-bold'><img src={logo} />Logo</Link></div>
 

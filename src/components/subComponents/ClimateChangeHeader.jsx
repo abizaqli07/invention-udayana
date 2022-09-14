@@ -13,7 +13,6 @@ function ClimateChangeHeader() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

@@ -1,12 +1,22 @@
 import React from 'react'
-import About from './subComponents/About';
-import Footer from './subComponents/Footer';
 import Header from './subComponents/Header';
-import HomeBox from './subComponents/HomeBox';
-import News from './subComponents/News';
 import Services from './subComponents/Services';
+import About from './subComponents/About';
+import News from './subComponents/News';
+import HomeBox from './subComponents/HomeBox';
+import Footer from './subComponents/Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-function Home() {
+const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      mirror: true
+    });
+  }, [])
+
   return (
     <div>
       <Header/>
