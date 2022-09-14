@@ -1,22 +1,21 @@
 import React from 'react'
-import PollutionPlasticHeader from './subComponents/PollutionPlasticHeader'
-import PollutionPlasticContent from './subComponents/PollutionPlasticContent'
-import News from './subComponents/News'
+import PollutionContent from './subComponents/PollutionContent'
+import ClimateChangeHeader from './subComponents/ClimateChangeHeader'
 import HomeBox from './subComponents/HomeBox'
 import Footer from './subComponents/Footer'
+import News from './subComponents/News'
+import PollutionStatistics from './subComponents/PollutionStatistics'
 
 function PollutionPlastic() {
   return (
     <div>
-      <PollutionPlasticHeader />
+      <ClimateChangeHeader />
       <div className='climate__change__background'>
-        <PollutionPlasticContent />
-        <News />
+        <PollutionStatistics />
+        <PollutionContent />
         <HomeBox />
-        <Footer />
-        <div className='text-white'>
-          <Footer />
-        </div>
+        <News />
+        <Footer/>
       </div>
     </div>
   )
