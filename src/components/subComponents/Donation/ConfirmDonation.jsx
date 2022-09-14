@@ -14,21 +14,21 @@ function ConfirmDonation(props) {
     <div className='w-full max-w-[1200px] grid grid-cols-1 gap-0 lg:grid-cols-[1.3fr_.7fr] drop-shadow-[0px_10px_10px_rgba(0,0,0,0.40)] lg:min-h-[670px]'>
       <div className='bg-white p-12 gap-12 flex flex-col rounded-t-[2rem] lg:rounded-l-[2rem] lg:rounded-tr-none'>
 
-        <div className='flex text-small font-light gap-2 text-slate-600 items-center'>
+        <div className='flex text-small font-light text-slate-600 items-start border-b-[1px] border-blue-500 w-fit'>
           <div className='donation__link-active ' onClick={props.showPersonal}>Data Pribadi</div>
-          <AiFillCaretRight />
-          <div className='donation__link-active' onClick={props.showDonation}>Donasi</div>
-          <AiFillCaretRight />
-          <div className='donation__link-active' >Konfimasi Data & Donasi</div>
+
+          <div className='donation__link-active pl-6' onClick={props.showDonation}>Donasi</div>
+
+          <div className='donation__link-active pl-6' >Konfimasi Data & Donasi</div>
         </div>
 
-        <div className='flex flex-col p-12 bg-slate-300 rounded-xl max-w-sm'>
+        <div className='min-w-[350px] flex flex-col p-12 bg-slate-100 rounded-xl max-w-sm self-center justify-self-center lg:self-start lg:justify-self-start'>
           <div className='text-h3 font-bold mb-12'>Ringkasan Donasi</div>
           <div className='flex flex-col gap-1 text-small font-light pb-4 border-b-[1px] border-slate-800'>
 
             <div className='flex justify-between'>
               <div>Besaran Donasi</div>
-              <div>Rp. 1.000.00</div>
+              <div>Rp. 1.000.000</div>
             </div>
             <div className='flex justify-between'>
               <div>Pajak</div>

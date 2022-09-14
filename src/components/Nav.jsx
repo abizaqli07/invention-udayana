@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useWindowScrollPositions } from "../components/subComponents/GetScrollPosition";
 import {
@@ -22,14 +22,14 @@ function Nav() {
     <div className='overflow-x-hidden'>
       <div className={`fixed z-40 w-[100vw]  font-normal ${scrollY > 0 ? "shadow-md bg-white" : ""}`}>
         <div className={`flex justify-between gap-8 layout pb-6 text-normal items-center transition-all duration-300 ${scrollY > 0 ? "pt-6" : "pt-6 lg:pt-16"}`}>
-          <div><Link to="/" className='flex gap-2 justify-center items-center font-bold'><img src={logo} />Logo</Link></div>
+          <div><NavLink to="/" className='flex gap-2 justify-center items-center font-bold'><img src={logo} />Logo</NavLink></div>
 
           <ul className='gap-8 items-center lg:flex hidden relative z-0'>
             <li className=' nav__link'>
-              <Link to="/">Home</Link>
+              <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Home</NavLink>
             </li>
             <li className=' nav__link'>
-              <Link to="/about">About</Link>
+              <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>About</NavLink>
             </li>
 
             <li className='dropdown__link'>
@@ -39,8 +39,8 @@ function Nav() {
               </div>
 
               <div className='dropdowns'>
-                <div className='dropdown__item'><Link to="/habitat">Habitats</Link></div>
-                <div className='dropdown__item'><Link to="/population">Population</Link></div>
+                <div className='dropdown__item'><NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Habitats</NavLink></div>
+                <div className='dropdown__item'><NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Population</NavLink></div>
               </div>
             </li>
 
@@ -51,14 +51,14 @@ function Nav() {
               </div>
 
               <div className='dropdowns w-60'>
-                <div className='dropdown__item'><Link to="/pollutionplastic">Pollution and Plastic</Link></div>
-                <div className='dropdown__item'><Link to="/climatechange">Climate Change</Link></div>
+                <div className='dropdown__item'><NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Pollution and Plastic</NavLink></div>
+                <div className='dropdown__item'><NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Climate Change</NavLink></div>
               </div>
             </li>
 
             <li className='ml-8'>
               <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 bg-white/40 hover:bg-white'>
-                <Link to="/takeaction">Take Action</Link>
+                <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
               </div>
             </li>
           </ul>
@@ -73,27 +73,27 @@ function Nav() {
         <div className='absolute text-big top-8 right-8 cursor-pointer' onClick={toggleHandler}><BiLogInCircle/></div>
         <ul className='gap-8 items-center flex flex-col justify-center'>
           <li className=' nav__link'>
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Home</NavLink>
           </li>
           <li className=' nav__link'>
-            <Link to="/about">About</Link>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>About</NavLink>
           </li>
           <li className=' nav__link'>
-            <Link to="/habitat">Habitats</Link>
+            <NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Habitats</NavLink>
           </li>
           <li className=' nav__link'>
-            <Link to="/population">Population</Link>
+            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Population</NavLink>
           </li>
           <li className=' nav__link'>
-            <Link to="/pollutionplastic">Pollution and Plastic</Link>
+            <NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Pollution and Plastic</NavLink>
           </li>
           <li className=' nav__link'>
-            <Link to="/climatechange">Climate Change</Link>
+            <NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Climate Change</NavLink>
           </li>
 
           <li className=''>
             <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary '>
-              <Link to="/takeaction">Take Action</Link>
+              <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
             </div>
           </li>
         </ul>

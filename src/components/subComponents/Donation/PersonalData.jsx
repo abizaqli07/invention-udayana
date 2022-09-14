@@ -13,11 +13,11 @@ function PersonalData(props) {
   return (
     <div className='w-full max-w-[1200px] min-w-[670px] grid grid-cols-1 gap-0 lg:grid-cols-[1.3fr_.7fr] drop-shadow-[0px_10px_10px_rgba(0,0,0,0.40)] lg:min-h-[670px]'>
       <div className='bg-white p-12 gap-12 flex flex-col rounded-t-[2rem] lg:rounded-l-[2rem] lg:rounded-tr-none'>
-        <div className='flex text-small font-light gap-2 text-slate-600 items-center'>
+        <div className='flex text-small font-light text-slate-600 items-start border-b-[1px] border-blue-500 w-fit'>
           <div className='donation__link-active'>Data Pribadi</div>
-          <AiFillCaretRight />
+
           <div className='donation__link' onClick={props.showDonation}>Donasi</div>
-          <AiFillCaretRight />
+
           <div className='donation__link' onClick={props.showConfirm}>Konfimasi Data & Donasi</div>
         </div>
 
@@ -70,7 +70,6 @@ function PersonalData(props) {
 
         <div className='flex gap-4 justify-end'>
           <div className='py-2 px-4 gradient-primary cursor-pointer rounded-full text-normal font-semibold text-white' onClick={props.showDonation}>Selanjutnya</div>
-          <div className='py-2 px-4 gradient-primary cursor-pointer rounded-full text-normal font-semibold text-white' onClick={props.showDonation}>Kirim</div>
         </div>
       </div>
 

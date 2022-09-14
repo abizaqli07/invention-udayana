@@ -90,7 +90,7 @@
   }
 
   .sub__title{
-    @apply text-blue-600 font-semibold text-h3;
+    @apply text-blue-600 font-semibold text-h2;
   }
 
   .title{
@@ -103,6 +103,10 @@
   }
 
   .nav__link:hover{
+    -webkit-text-stroke: 0.05rem #000;
+  }
+
+  .nav__link-active{
     -webkit-text-stroke: 0.05rem #000;
   }
 
@@ -212,13 +216,17 @@
     background-size: cover;
   }
 
+  .donation__link{
+    @apply  cursor-pointer pl-6
+  }
+
   .donation__link:hover{
-    -webkit-text-stroke: 0.05rem rgb(59, 130, 246);
-    @apply text-blue-500 cursor-pointer
+    -webkit-text-stroke: 0.03rem #000;
   }
 
   .donation__link-active{
-    @apply text-blue-500 cursor-pointer font-bold
+    -webkit-text-stroke: 0.03rem #000;
+    @apply cursor-pointer pb-2 border-b-[3px] border-blue-500
   }
 
   .donation__input{
@@ -226,7 +234,7 @@
   }
 
   .donation__input-box{
-    @apply bg-slate-400/40 p-2 w-full rounded-lg max-w-[400px]
+    @apply bg-slate-100 p-2 w-full rounded-lg max-w-[400px] border-none
   }
 
   .donation__checkbox{
@@ -234,6 +242,12 @@
   }
 
   .donation__input-checkbox{
-    @apply bg-slate-400/40 focus:ring-0 cursor-pointer w-6 h-6 rounded-md
+    @apply bg-slate-100 border-none focus:ring-0 cursor-pointer w-6 h-6 rounded-md
+  }
+
+  /* ======================== ABOUT SECTION  ================== */
+  .about__hero{
+    background: url(./assets/aboutHero.png) bottom right no-repeat;
+    background-size: cover;
   }
 }

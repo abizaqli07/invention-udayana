@@ -19,11 +19,11 @@ function Donation(props) {
   return (
     <div className='w-full max-w-[1200px] grid grid-cols-1 gap-0 lg:grid-cols-[1.3fr_.7fr] drop-shadow-[0px_10px_10px_rgba(0,0,0,0.40)] lg:min-h-[670px]'>
       <div className='bg-white p-12 gap-12 flex flex-col rounded-t-[2rem] lg:rounded-l-[2rem] lg:rounded-tr-none'>
-        <div className='flex text-small font-light gap-2 text-slate-600 items-center'>
+        <div className='flex text-small font-light text-slate-600 items-start border-b-[1px] border-blue-500 w-fit'>
           <div className='donation__link-active' onClick={props.showPersonal}>Data Pribadi</div>
-          <AiFillCaretRight />
-          <div className='donation__link-active'>Donasi</div>
-          <AiFillCaretRight />
+
+          <div className='donation__link-active pl-6'>Donasi</div>
+
           <div className='donation__link' onClick={props.showConfirm}>Konfimasi Data & Donasi</div>
         </div>
 
@@ -37,7 +37,7 @@ function Donation(props) {
             </div>
             <div className='donation__input'>
               <label for="noreceiver">No. Tujuan Donasi</label>
-              <input className='donation__input-box' type="text" id='noreceiver'></input>
+              <input className='donation__input-box disabled:opacity-75' type="text" id='noreceiver' value="3625 4193 0474 118 12" disabled></input>
             </div>
           </div>
 
@@ -45,12 +45,12 @@ function Donation(props) {
             <div className='text-h2 font-bold'>Metode Pembayaran</div>
 
             <div className='flex gap-3 flex-wrap'>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center'><img className='w-[40px] h-auto' src={Payment1} /></div>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center'><img className='w-[40px] h-auto' src={Payment2} /></div>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center'><img className='w-[40px] h-auto' src={Payment3} /></div>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center'><img className='w-[40px] h-auto' src={Payment4} /></div>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center'><img className='w-[40px] h-auto' src={Payment5} /></div>
-              <div className='px-4 py-2 bg-slate-300 rounded-lg flex items-center font-semibold'>Lainnya</div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300'><img className='w-[40px] h-auto' src={Payment1} /></div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300'><img className='w-[40px] h-auto' src={Payment2} /></div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300'><img className='w-[40px] h-auto' src={Payment3} /></div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300'><img className='w-[40px] h-auto' src={Payment4} /></div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300'><img className='w-[40px] h-auto' src={Payment5} /></div>
+              <div className='px-4 py-2 bg-slate-100 rounded-lg flex items-center cursor-pointer hover:bg-slate-300 font-semibold'>Lainnya</div>
             </div>
 
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
@@ -73,7 +73,7 @@ function Donation(props) {
         </form>
 
         <div className='flex gap-4 justify-end'>
-          <div className='py-2 px-4 gradient-primary cursor-pointer rounded-full text-normal font-semibold text-white' onClick={props.showConfirm}>Kirim</div>
+          <div className='py-2 px-4 gradient-primary cursor-pointer rounded-full text-normal font-semibold text-white' onClick={props.showConfirm}>Selanjutnya</div>
         </div>
       </div>
 
