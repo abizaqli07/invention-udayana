@@ -8,15 +8,16 @@ import Population from './components/Population';
 import PollutionPlastic from './components/PollutionPlastic';
 import ClimateChange from './components/ClimateChange';
 import TakeAction from './components/TakeAction';
+import ScrollToTop from './components/subComponents/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
-        <Route path="/habitat" element={<Habitat />} />
         <Route path="/population" element={<Population />} />
         <Route path="/pollutionplastic" element={<PollutionPlastic />} />
         <Route path="/climatechange" element={<ClimateChange />} />

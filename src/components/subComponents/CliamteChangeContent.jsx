@@ -1,82 +1,11 @@
 import React from 'react'
 import Nekton from '../../assets/nekton.png'
-import NewsSwiper from './NewsSwiper'
 
 
 function ClimateChangeContent() {
   return (
     // ========== CONTAINER FOR MAIN CONTENT ==========
     <div className='layout pt-24 mb-64'>
-      <div className='w-full h-full'>
-        <div className='layout '>
-
-          {/* ========== TITLE MAIN CONTENT ========== */}
-          <div className='title__container'>
-            <div className='sub__title'>Permasalahan di Lautan</div>
-            <div className='title'>Dampak Besar Perubahan Iklim di Lautan</div>
-          </div>
-          {/* ========== END OF TITLE MAIN CONTENT ========== */}
-
-          {/* ========== CONTAINER FOR CARD ========== */}
-          <div className='hidden sm:grid grid-cols-[repeat(1,_300px)] mt-16 gap-8 justify-center items-center sm:grid-cols-[repeat(2,_300px)] lg:grid-cols-[repeat(3,_300px)] '>
-            
-            {/* ========== CARD ========== */}
-            <div className='news__card w-[300px] h-auto min-h-[350px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
-              <div className='news__image w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-500'>
-              </div>
-              <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-200 ease-out delay-500'>
-                <div className='text-h3 font-semibold text-center'>90%</div>
-                <div className='text-small font-light text-center'>
-                  Bumi menyerap panas yang dihasilkan oleh peningkatan emisi.
-                </div>
-              </div>
-            </div>
-            {/* ========== END OF CARD ========== */}
-
-            {/* ========== CARD ========== */}
-            <div className='news__card w-[300px] h-auto min-h-[350px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
-              <div className='news__image w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-500'>
-              </div>
-              <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-200 ease-out delay-500'>
-                <div className='text-h3 font-semibold text-center'>680 Juta</div>
-                <div className='text-small font-light text-center'>
-                  Penurunan mata pencaharian masyarakat pesisir pantai
-                </div>
-              </div>
-            </div>
-            {/* ========== END OF CARD ========== */}
-
-            {/* ========== CARD ========== */}
-            <div className='news__card w-[300px] h-auto min-h-[350px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
-              <div className='news__image w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-500'>
-              </div>
-              <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-200 ease-out delay-500'>
-                <div className='text-h3 font-semibold text-center'>68 Juta</div>
-                <div className='text-small font-light text-center'>
-                  Penurunan di sektor perikanan dan akuakultur di seluruh dunia.
-                </div>
-              </div>
-            </div>
-            {/* ========== END OF CARD ========== */}
-
-          </div>
-          {/* END OF CONTAINER FOR CARD */}
-
-          {/* ========== SWIPER JS FOR CARD ========== */}
-          <div className='sm:hidden mt-16 400px h-full mb-16'>
-            <NewsSwiper />
-          </div>
-          {/* ========== END SWIPER JS FOR CARD ========== */}
-
-        </div>
-      </div>
-
-      {/* ========== QUOTE ========== */}
-      <div className=' text-center population__content-title mx-auto'>
-        Perubahan Iklim di Lautan menyebabkan dampak jangka panjang pada keanekaragaman hayati laut, dan kehidupan serta
-        mata pencaharian masyarakat pesisir dan sekitarnya
-      </div>
-      {/* ========== END OF QUOTE ========== */}
 
       {/* ========== CONTAINER FOR DAMPAK PERUBAHAN IKLIM ========== */}
       <div className='w-full h-full mt-36'>

@@ -28,20 +28,13 @@ function Nav() {
             <li className=' nav__link'>
               <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Beranda</NavLink>
             </li>
+            
             <li className=' nav__link'>
               <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Tentang</NavLink>
             </li>
 
-            <li className='dropdown__link'>
-              <div className='flex gap-2 text-normal content-center nav__link peer'>
-                Ocean Life
-                <BiChevronDown className='text-h2' />
-              </div>
-
-              <div className='dropdowns'>
-                <div className='dropdown__item'><NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Biota Laut</NavLink></div>
-                <div className='dropdown__item'><NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Ekosistem Laut</NavLink></div>
-              </div>
+            <li className=' nav__link'>
+              <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Ocean Life</NavLink>
             </li>
 
             <li className='dropdown__link'>
@@ -70,30 +63,30 @@ function Nav() {
       </div>
 
       <div className={`lg:hidden w-[100vw] h-[100vh] bg-white flex justify-center transition-all fixed z-50 duration-500 ease-out ${toggle ? "right-0" : "-right-[110%]"}`}>
-        <div className='absolute text-big top-8 right-8 cursor-pointer' onClick={toggleHandler}><BiLogInCircle/></div>
+        <div className='absolute text-big top-8 right-8 cursor-pointer' onClick={toggleHandler}><BiLogInCircle /></div>
         <ul className='gap-8 items-center flex flex-col justify-center'>
           <li className=' nav__link'>
-            <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Bernada</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Home</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Tentang</NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>About</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Biota Laut</NavLink>
+            <NavLink to="/habitat" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Habitats</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Eksostem Laut</NavLink>
+            <NavLink to="/population" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Population</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Polusi dan Plastik</NavLink>
+            <NavLink to="/pollutionplastic" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Pollution and Plastic</NavLink>
           </li>
           <li className=' nav__link'>
-            <NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")}>Perubahan Iklim</NavLink>
+            <NavLink to="/climatechange" className={({ isActive }) => (isActive ? "nav__link-active" : "")} onClick={toggleHandler}>Climate Change</NavLink>
           </li>
 
           <li className=''>
             <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary shadow-[0px_12px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_10px_10px_rgba(0,0,0,0.15)]'>
-              <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
+              <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")} onClick={toggleHandler}>Take Action</NavLink>
             </div>
           </li>
         </ul>

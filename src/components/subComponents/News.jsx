@@ -3,8 +3,9 @@ import NewsSwiper from './NewsSwiper'
 
 function News() {
   return (
-    // =========== CONTAINER FOR NEWS ===========
-    <div className='w-full h-full'>
+
+    <div className='w-full h-full mb-40'>
+
       <div className='layout '>
 
         {/* =========== TITLE CONTAINER =========== */}
