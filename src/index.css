@@ -196,4 +196,44 @@
   .population__content-title{
     @apply text-big font-bold self-center
   }
+
+  /* ======================== TAKE ACTION SECTION  ================== */
+  .takeaction__hero {
+    background: url(./assets/takeActionHero.png) bottom right no-repeat;
+    background-size: cover;
+  }
+
+  .take__action-card{
+    @apply flex flex-col gap-0 max-w-[300px] [&:hover>div:last-child]:gradient-primary [&:hover>div:last-child]:text-white [&:hover>div:last-child>div:last-child]:border-slate-700 
+  }
+
+  .donation__background{
+    background: url(./assets/donation.png) top center no-repeat;
+    background-size: cover;
+  }
+
+  .donation__link:hover{
+    -webkit-text-stroke: 0.05rem rgb(59, 130, 246);
+    @apply text-blue-500 cursor-pointer
+  }
+
+  .donation__link-active{
+    @apply text-blue-500 cursor-pointer font-bold
+  }
+
+  .donation__input{
+    @apply flex flex-col gap-1 text-normal text-slate-600
+  }
+
+  .donation__input-box{
+    @apply bg-slate-400/40 p-2 w-full rounded-lg max-w-[400px]
+  }
+
+  .donation__checkbox{
+    @apply flex gap-2
+  }
+
+  .donation__input-checkbox{
+    @apply bg-slate-400/40 focus:ring-0 cursor-pointer w-6 h-6 rounded-md
+  }
 }
