@@ -57,7 +57,7 @@ function Nav() {
             </li>
 
             <li className='ml-8'>
-              <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 bg-white/40 hover:bg-gradient-to-r from-[rgb(0,87,255)] to-[rgb(22,207,203)] hover:text-white'>
+              <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 bg-white/40 hover:bg-gradient-to-r from-[rgb(0,87,255)] to-[rgb(22,207,203)] hover:text-white shadow-[0px_12px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_10px_10px_rgba(0,0,0,0.15)]'>
                 <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
               </div>
             </li>
@@ -92,7 +92,7 @@ function Nav() {
           </li>
 
           <li className=''>
-            <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary '>
+            <div className='nav__link border-[2px] border-blue-500 rounded-full py-2 px-7 hover:gradient-primary shadow-[0px_12px_12px_rgba(0,0,0,0.15)] hover:shadow-[0px_10px_10px_rgba(0,0,0,0.15)]'>
               <NavLink to="/takeaction" className={({ isActive }) => (isActive ? "nav__link-active-action" : "")}>Take Action</NavLink>
             </div>
           </li>

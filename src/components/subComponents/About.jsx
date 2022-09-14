@@ -23,10 +23,14 @@ function About() {
 
         {/* =========== CONTAINER FOR LARGE DEVICE =========== */}
         <div className='text-justify text-normal flex flex-col gap-y-4' data-aos='zoom-in-up' data-aos-duration='1000' data-aos-delay='1000'>
-          <div className='text-h3 font-normal hidden lg:block text-left'>Tentang Website</div>
-          <div className='text-h1 font-bold hidden lg:block text-left'>Apa itu Website</div>
-          <div className='font-extralight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</div>
-          <div className='font-extralight'>Maecenas eget condimentum velit, sit amet feugiat lectus. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum.</div>
+          <div className='text-h3 font-normal hidden lg:block text-left'>Tentang Segara</div>
+          <div className='text-h1 font-bold hidden lg:block text-left'>Apa itu Segara</div>
+          <div className='font-extralight'>
+            Segara adalah platform yang berdiri untuk menjaga kesehatan lautan dari ancaman yang akan datang. Kami mendokumentasikan masalah dan mengembangkan solusi, mempersenjatai orang dengan pengetahuan, dan alat sehingga mereka dapat membuat perbedaan.
+          </div>
+          <div className='font-extralight'>
+            Dengan seluruh elemen masyarakat, kami pergi ke Perserikatan Bangsa-Bangsa dan badan-badan global lainnya untuk melakukan perubahan Internasional. Kami menghadiri pertemuan-pertemuan ini sehingga kami dapat menawarkan rencana yang kreatif, layak secara ekonomi, berkelanjutan, dan ramah lingkungan kepada para pembuat keputusan.
+          </div>
           <div className='w-full lg:w-fit px-12 py-4 rounded-full bg-white text-blue-500 text-center text-h3 font-semibold mt-4 mb-16 lg:mb-0'>Tentang Kami</div>
         </div>
         {/* =========== END OF CONTAINER LARGE DEVICE =========== */}
