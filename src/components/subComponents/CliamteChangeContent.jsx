@@ -1,7 +1,6 @@
 import React from 'react'
 import Nekton from '../../assets/nekton.png'
 
-
 function ClimateChangeContent() {
   return (
     // ========== CONTAINER FOR MAIN CONTENT ==========
@@ -13,15 +12,15 @@ function ClimateChangeContent() {
         {/* ========== DAMPAK ========== */}
         <div className='layout p-8 rounded-[1rem] flex flex-col gap-y-6 text-center justify-center items-center lg:grid lg:grid-cols-2 lg:gap-8'>
           <div className='flex flex-col lg:hidden'>
-            <div className='text-h3 font-normal'>Konsekuensi Utama</div>
-            <div className='text-h1 font-bold'>Dampak Besar Perubahan Iklim di Laut</div>
+            <div className='text-h3 font-normal' data-aos='fade-up' data-aos-duration='500'>Konsekuensi Utama</div>
+            <div className='text-h1 font-bold' data-aos='fade-up' data-aos-duration='500' data-aos-delay='100'>Dampak Besar Perubahan Iklim di Laut</div>
           </div>
-          <div>
+          <div data-aos='fade-right' data-aos-duration='1000' data-aos-delay='1000'>
             <img className='w-full h-auto' src={ Nekton } />
           </div>
           <div className='text-justify text-normal flex flex-col gap-y-4'>
-            <div className='text-h1 font-bold hidden lg:block text-left'>Kenaikan Permukaan Laut</div>
-            <div className='text-small'>
+            <div className='text-h1 font-bold hidden lg:block text-left' data-aos='fade-left' data-aos-duration='500'>Kenaikan Permukaan Laut</div>
+            <div className='text-small' data-aos='fade-left' data-aos-duration='1000' data-aos-delay='1000'>
               Kenaikan permukaan laut telah dipercepat dalam beberapa dekade terakhir karena meningkatnya hilangnya es di
               wilayah kutub dunia. Data terbaru dari <a href="https://library.wmo.int/doc_num.php?explnum_id=11178"
                 target="_blank" rel="noopener noreferrer">Organisasi Meteorologi Dunia</a> menunjukkan bahwa permukaan laut
@@ -38,8 +37,6 @@ function ClimateChangeContent() {
               mengatakan bahwa beberapa wilayah, seperti Pasifik Tropis barat, Pasifik Barat Daya, Pasifik Utara, Samudra
               Hindia Barat Daya, dan Atlantik Selatan, menghadapi permukaan laut yang jauh lebih cepat. bangkit.
             </div>
-            <div className='text-small'>Maecenas eget condimentum velit, sit amet feugiat lectus. Curabitur vel bibendum
-              lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum.</div>
           </div>
         </div>
         {/* ========== END OF DAMPAK ========== */}
@@ -51,8 +48,8 @@ function ClimateChangeContent() {
             <div className='text-h1 font-bold'>Dampak </div>
           </div>
           <div className='text-justify text-normal flex flex-col gap-y-4'>
-            <div className='text-h1 font-bold hidden lg:block text-left'>Gelombang Panas Laut</div>
-            <div className='text-small'>
+            <div className='text-h1 font-bold hidden lg:block text-left' data-aos='fade-right' data-aos-duration='500'>Gelombang Panas Laut</div>
+            <div className='text-small' data-aos='fade-right' data-aos-duration='1000' data-aos-delay='1000'>
               Gelombang panas laut telah berlipat ganda frekuensinya, dan menjadi lebih tahan lama, lebih intens dan luas.
               IPCC mengatakan bahwa pengaruh manusia telah menjadi pendorong utama peningkatan panas laut yang diamati sejak
               tahun 1970-an.
@@ -69,7 +66,7 @@ function ClimateChangeContent() {
               - menyebar ke seluruh samudera Pasifik, India, dan Atlantik.
             </div>
           </div>
-          <div><img className='w-full h-auto' src={ Nekton } /></div>
+          <div data-aos='fade-left' data-aos-duration='1000' data-aos-delay='1000'><img className='w-full h-auto' src={ Nekton } /></div>
 
         </div>
         {/* ========== END OF DAMPAK ========== */}
@@ -77,12 +74,12 @@ function ClimateChangeContent() {
         {/* ========== DAMPAK ========== */}
         <div className='layout p-8 rounded-[1rem] flex flex-col gap-y-6 text-center justify-center items-center lg:grid lg:grid-cols-2 lg:gap-8'>
           <div className='flex flex-col lg:hidden'>
-            <div className='text-h3 font-normal'>Konsekuensi Utama</div>
-            <div className='text-h1 font-bold'>Dampak Besar Perubahan Iklim di Laut</div>
+            <div className='text-h3 font-normal' data-aos='fade-left' data-aos-duration='500'>Konsekuensi Utama</div>
+            <div className='text-h1 font-bold' data-aos='fade-left' data-aos-duration='1000' data-aos-delay='1000'>Dampak Besar Perubahan Iklim di Laut</div>
           </div>
-          <div><img className='w-full h-auto' src={ Nekton } /></div>
+          <div data-aos='fade-right' data-aos-duration='1000' data-aos-delay='1000'><img className='w-full h-auto' src={ Nekton } /></div>
           <div className='text-justify text-normal flex flex-col gap-y-4'>
-            <div className='text-h1 font-bold hidden lg:block text-left'>Hilangnya keanekaragaman hayati laut</div>
+            <div className='text-h1 font-bold hidden lg:block text-left' data-aos='fade-left' data-aos-duration='1000' data-aos-delay='1000'>Hilangnya keanekaragaman hayati laut</div>
             <div className='text-small'>
               Meningkatnya suhu meningkatkan risiko hilangnya ekosistem laut dan pesisir yang tidak dapat dipulihkan . Saat
               ini, perubahan luas telah diamati, termasuk kerusakan terumbu karang dan bakau yang mendukung kehidupan laut,

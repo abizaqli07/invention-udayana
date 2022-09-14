@@ -315,7 +315,12 @@
   }
 
   /* ======================== CLIMATE CHANGE SECTION  ================== */
-  .climate__quote-background{
+
+  .climate__change__hero {
+    background: url(./assets/climate_changes.jpg) top right no-repeat;
+    background-size: cover;
+  }
+  .climate__quote-background {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .7)), url(./assets/climateQuote.jpg) center center no-repeat;
     background-size: cover;
   }

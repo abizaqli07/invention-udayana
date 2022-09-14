@@ -6,9 +6,20 @@ import HomeBox from './subComponents/HomeBox'
 import Footer from './subComponents/Footer'
 import News from './subComponents/News'
 import ClimateChangeStatistics from './subComponents/ClimateChangeStatistics'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 
-function ClimateChange() {
+const ClimateChange = () => {
+
+  // EFFECT FOR ANIMATE ON SCROLL
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, [])
+
   return (
     <div>
       <ClimateChangeHeader />
