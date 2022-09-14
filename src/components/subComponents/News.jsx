@@ -60,7 +60,7 @@ function News() {
           {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div className='news__image news__image4 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
-            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
+            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100'>
               <div className='text-h3 font-semibold mb-2'>700 Orang Diselamatkan!</div>
               <div className='text-small font-light mb-4'>Italia menyelamatkan hampir 700 imigran di pantai Calabria.</div>
               <div className='flex justify-between items-center mt-2'>
@@ -73,7 +73,7 @@ function News() {
           {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div className='news__image news__image5 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
-            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
+            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up'>
               <div className='text-h3 font-semibold mb-2'>Shinzo Abe</div>
               <div className='text-small font-light mb-4'>Kedigdayaan Maritim Jepang pada masa Shinzo Abe.</div>
               <div className='flex justify-between items-center mt-2'>
@@ -86,7 +86,7 @@ function News() {
           {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div className='news__image news__image6 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
-            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
+            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up'>
               <div className='text-h3 font-semibold mb-2'>Ancol milik siapa?</div>
               <div className='text-small font-light mb-4'>Hak milik antara Ciputra dengan Pemprov Jakarta.</div>
               <div className='flex justify-between items-center mt-2'>

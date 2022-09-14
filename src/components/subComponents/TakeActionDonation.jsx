@@ -14,7 +14,7 @@ function TakeActionDonation() {
 
   return (
     <div className='w-full donation__background py-20 mb-36'>
-      <div className='layout flex justify-center items-center'>
+      <div className='layout flex justify-center items-center' data-aos='zoom-in' data-aos-duration='500' data-aos-delay='1000'>
         {
           toggle.tabType === 'personal' && <PersonalData showPersonal={() => toggleHandler('personal')} showDonation={() => toggleHandler('donation')} showConfirm={() => toggleHandler('confirm')}/>
         }

@@ -27,7 +27,7 @@ function Donation(props) {
           <div className='donation__link' onClick={props.showConfirm}>Konfimasi Data & Donasi</div>
         </div>
 
-        <form className='flex flex-col gap-4'>
+        <form className='flex flex-col gap-4' data-aos='fade-left' data-aos-duration='500' data-aos-delay='100'>
           <div className='text-h2 font-bold'>Donasi</div>
 
           <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>

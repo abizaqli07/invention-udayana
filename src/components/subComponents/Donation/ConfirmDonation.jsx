@@ -22,7 +22,7 @@ function ConfirmDonation(props) {
           <div className='donation__link-active pl-6' >Konfimasi Data & Donasi</div>
         </div>
 
-        <div className='min-w-[350px] flex flex-col p-12 bg-slate-100 rounded-xl max-w-sm self-center justify-self-center lg:self-start lg:justify-self-start'>
+        <div className='min-w-[350px] flex flex-col p-12 bg-slate-100 rounded-xl max-w-sm self-center justify-self-center lg:self-start lg:justify-self-start' data-aos='fade-left' data-aos-duration='500' data-aos-delay='100'>
           <div className='text-h3 font-bold mb-12'>Ringkasan Donasi</div>
           <div className='flex flex-col gap-1 text-small font-light pb-4 border-b-[1px] border-slate-800'>
 
