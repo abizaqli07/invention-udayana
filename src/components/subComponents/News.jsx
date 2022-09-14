@@ -3,15 +3,22 @@ import NewsSwiper from './NewsSwiper'
 
 function News() {
   return (
+    // =========== CONTAINER FOR NEWS ===========
     <div className='w-full h-full'>
       <div className='layout '>
+
+        {/* =========== TITLE CONTAINER =========== */}
         <div className='title__container'>
           <div className='sub__title' data-aos='fade-up' data-aos-duration='500'>Berita Terbaru</div>
           <div className='title' data-aos='fade-up' data-aos-duration='500' data-aos-delay='100'>Dapatkan berita terupdate hari ini</div>
         </div>
+        {/* =========== END OF TITLE CONTAINER =========== */}
 
+        {/* =========== CONTAINER FOR NEWS CARD =========== */}
         <div className='hidden sm:grid grid-cols-[repeat(1,_300px)] mt-16 gap-8 justify-center items-center sm:grid-cols-[repeat(2,_300px)] lg:grid-cols-[repeat(3,_300px)] '>
-        <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
+
+          {/* =========== NEWS CARD =========== */}
+          <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
             <div className='news__image news__image1 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
             <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100'>
               <div className='text-h3 font-semibold mb-2'>Kota Terendam!</div>
@@ -21,9 +28,12 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+
+          {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
             <div className='news__image news__image2 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
-            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
+            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100'>
               <div className='text-h3 font-semibold mb-2'>Meneropong Nasib Pelaut</div>
               <div className='text-small font-light mb-4'>Harga BBM naik membuat nasib pelaut terombang ambing</div>
               <div className='flex justify-between items-center mt-2'>
@@ -31,9 +41,12 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+
+          {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
             <div className='news__image news__image3 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
-            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='500'>
+            <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100'>
               <div className='text-h3 font-semibold mb-2'>Nelayan Dilarang Tangkap Ikan</div>
               <div className='text-small font-light mb-4'>Bencana bagi nelayan.</div>
               <div className='flex justify-between items-center mt-2'>
@@ -41,6 +54,9 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+
+          {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
             <div className='news__image news__image4 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
             <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
@@ -51,6 +67,9 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+
+          {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
             <div className='news__image news__image5 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
             <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
@@ -61,6 +80,9 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+
+          {/* =========== NEWS CARD =========== */}
           <div className='news__card w-[300px] h-auto min-h-[380px] flex flex-col gap-4 relative overflow-hidden rounded-2xl transition-all duration-300 ease-in-out'>
             <div className='news__image news__image6 w-[300px] h-[200px] transition-all duration-300 ease-in-out rounded-2xl  delay-100'></div>
             <div className='news__content flex flex-col gap-1 absolute z-20 left-0 bottom-0 p-4 transition-all duration-100 ease-out delay-100' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='1000'>
@@ -71,13 +93,18 @@ function News() {
               </div>
             </div>
           </div>
+          {/* =========== END NEWS CARD =========== */}
+          
         </div>
+        {/* =========== END OF CONTAINER NEWS CARD =========== */}
 
+        {/* SWIPER FOR NEWS CARD */}
         <div className='sm:hidden mt-16 400px h-full mb-16'>
           <NewsSwiper />
         </div>
       </div>
     </div>
+    // =========== END OF CONTAINER FOR NEWS ===========
   )
 }
 

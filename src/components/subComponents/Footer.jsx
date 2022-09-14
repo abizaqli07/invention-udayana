@@ -12,6 +12,7 @@ import {
 
 function Footer() {
   return (
+    // ========== CONTAINER FOR FOOTER ==========
     <div className='w-full h-full pb-4'>
       <div className='layout'>
         <div className='flex flex-col gap-8 lg:flex-row justify-between items-center lg:items-start'>
@@ -51,6 +52,7 @@ function Footer() {
         <div className='mt-16 text-small text-center'>&#169; TheDeadliners. All right reserved</div>
       </div>
     </div>
+    // ========== END OF CONTAINER FOR FOOTER ==========
   )
 }
 

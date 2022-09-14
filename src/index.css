@@ -122,6 +122,8 @@
     @apply bg-slate-200 px-6 py-4 hover:bg-slate-300 flex 
   }
 
+
+
   /* ======================== HOME SECTION  ================== */
   .hero {
     background: url(./assets/hero.jpg) top no-repeat;
@@ -302,5 +304,9 @@
   .about__hero{
     background: url(./assets/aboutHero.png) bottom right no-repeat;
     background-size: cover;
+  }
+
+  .service__card:hover img {
+    filter: invert(1)
   }
 }

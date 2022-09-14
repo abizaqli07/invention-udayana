@@ -10,10 +10,11 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 const Home = () => {
+
+  // EFFECT FOR ANIMATE ON SCROLL
   useEffect(() => {
     Aos.init({
       once: true,
-      mirror: true
     });
   }, [])
 
