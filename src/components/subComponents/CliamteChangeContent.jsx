@@ -1,5 +1,4 @@
 import React from 'react'
-import Plankton from '../../assets/plankton.png'
 import Nekton from '../../assets/nekton.png'
 import NewsSwiper from './NewsSwiper'
 
