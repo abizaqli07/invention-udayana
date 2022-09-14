@@ -12,7 +12,6 @@ function About() {
       <AboutHeader/>
       <AboutContent/>
       <AboutThropy/>
-      <AboutTeam/>
       <HomeBox/>
       <Footer/>
     </div>
